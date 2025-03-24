@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id('id_order');
             $table->unsignedBigInteger('id_client');
             $table->decimal('total',10,2);
+            $table->tinyInteger('doc_type');
             $table->string('doc_number',20)->nullable();
             $table->timestamps();
 
